@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Study Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Instant Study Planner</h1>
+            <p>Transform your Gemini chaos into clarity.</p>
+        </header>
+
+        <main>
+            <section class="magic-box-section">
+                <div class="glass-card input-card">
+                    <h2>Paste Your Plan</h2>
+                    <textarea id="magic-input" placeholder="Paste your weekly schedule from Gemini here..."></textarea>
+                    <button id="generate-btn" class="glow-button">
+                        <span class="btn-text">Generate Schedule</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                </div>
+            </section>
+
+            <section id="dashboard" class="dashboard-section hidden">
+                <div class="dashboard-header">
+                    <h2>Your Week</h2>
+                    <button id="clear-btn" class="secondary-button">Clear</button>
+                </div>
+                <div id="planner-container" class="planner-grid">
+                    <!-- Day cards will be injected here -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
